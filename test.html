@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Festival Harmonie Des Sons</title>
+    <link rel="stylesheet" href="sons.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="mailto:thramanitra@gmail.com">TR</a></div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#programmation">Programmation</a></li>
+                <li><a href="#billetterie">Billetterie</a></li>
+                <li><a href="#infospratiques">Infos Pratiques</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <section class="hero__video">
+        <video src="video/135569-762117587_medium.mp4" poster="img/festival.jpg" playsinline autoplay loop muted></video>
+        <div class="main__title">
+            <h1>Vibrez au rythme de la <span class="accent-italic">musique</span></h1>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="introduction" id="programmation">
+            <div class="introduction__text">
+                <h2>Le festival revient <span class="accent-italic"> pour sa onzième édition</span></h2>
+                <p>Evènement incoutournable de l'été depuis plus de 10 ans, le festival s'installe chaque année à la <span class="accent-bold">Citadelle de Saint-Tropez</span> pour embraser les nuits du 10 au 13 juillet.</p>
+                                <p>Cette année, nous accueillons à nouveau des artistes de folie : Lianne La Havas, Solange, Jordan Rakei, Charlotte Day Wilson...</p>
+
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-white mb-6">Programmation</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-gray-800 rounded-lg">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Date</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Artiste</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Scène</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Heure</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-700">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">10 Juillet</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Lianne La Havas</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Scène Principale</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">20:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">11 Juillet</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Solange</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Scène Principale</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">21:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">12 Juillet</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Jordan Rakei</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Scène du Port</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">19:30</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">13 Juillet</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Charlotte Day Wilson</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Scène du Port</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">20:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <figure class="introduction__image">
+                <img src="img/festival.jpg" alt="Harmonie des Sons en pleine action">
+            </figure>
+        </section>
+
+        <section class="artists">
+            <h2>Découvrez les Artistes du Festival</h2>
+            <p>Plongez dans l'univers musical de "Harmonie des Sons" avec ces extraits exclusifs.</p>
+            <article class="card">
+                <h3>Extrait de l'artiste "Mélodie Envoûtante"</h3>
+                <p>Voici un avant-goût de ce qui vous attend sur scène.</p>
+                <audio controls>
+                    <source src="audios/Jazz_et_la_java.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas la balise audio.
+                </audio>
+            </article>
+        </section>
+
+        <section class="line-up bg-gray-900 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">Line-up</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                        <div class="youtube-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nm1vE9GdMXY?si=gAhrs_664IU0bQxf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Lianne La Havas</h3>
+                            <p class="text-gray-400">Soul, R&B</p>
+                        </div>
+                    </div> <!--video youtube-->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                        <div class="youtube-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/otSYKZOjN-Y?si=9uway7xgJYERi1OA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Solange</h3>
+                            <p class="text-gray-400">R&B, Soul</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                        <div class="youtube-container">
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PaVhwLb8N9E?si=ZZTWEnwmRhPoWHgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+</div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Jordan Rakei</h3>
+                            <p class="text-gray-400">Jazz, Soul</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section class="promotion-video">
+            <div class="promotion-video__text">
+                <h2>Anticipez <span class="accent-italic"> votre venue</span></h2>
+                <p>Pour profiter au maximum du festival, nous vous recommandons de prendre vos billets à l'avance sur notre billetterie en ligne et de prévoir tout ce dont vous aurez besoin pour votre séjour : hôtel, restauration, transports...</p>
+                <p>Consultez les sites de nos partenaires privilégiés pour réserver vos hôtels + train au meilleur tarif : </p>
+                <a href="#" class="button">Nos Partenaires</a>
+            </div>
+            <figure class="promotion-video__video">
+                <video src="video/135569-762117587_medium.mp4" controls autoplay loop muted></video>
+            </figure>
+        </section>
+
+        <section id="billetterie" class="bg-gray-900 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">Billetterie</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col">
+                        <h4 class="text-xl font-bold text-white mb-4">Pass 1 Jour</h4>
+                        <p class="text-4xl font-bold text-white mb-4">50€</p>
+                        <ul class="text-gray-400 mb-6">
+                            <li>Accès à tous les concerts du jour</li>
+                            <li>Accès à la Scène Principale & Scène du Port</li>
+                        </ul>
+                        <a href="#" class="button w-full text-center mt-auto">Acheter</a>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col">
+                        <h4 class="text-xl font-bold text-white mb-4">Pass 2 Jours</h4>
+                        <p class="text-4xl font-bold text-white mb-4">90€</p>
+                        <ul class="text-gray-400 mb-6">
+                            <li>Accès à tous les concerts sur 2 jours</li>
+                            <li>Accès à la Scène Principale & Scène du Port</li>
+                        </ul>
+                        <a href="#" class="button w-full text-center mt-auto">Acheter</a>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col">
+                        <h4 class="text-xl font-bold text-white mb-4">Pass 4 Jours</h4>
+                        <p class="text-4xl font-bold text-white mb-4">150€</p>
+                        <ul class="text-gray-400 mb-6">
+                            <li>Accès à tous les concerts du festival</li>
+                            <li>Accès à la Scène Principale & Scène du Port</li>
+                            <li>T-shirt officiel du festival</li>
+                        </ul>
+                        <a href="#" class="button w-full text-center mt-auto">Acheter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="infospratiques">
+            <div class="newsletter__text">
+                <h2>S'inscrire à la <span class="accent-italic"> Newsletter</span></h2>
+                <p>Obtenez toutes les informations exclusives et tous les bons plans en vous abonnant à la newsletter du festival :</p>
+                <form class="newsletter__form">
+                    <input type="text" placeholder="Prénom">
+                    <input type="email" placeholder="Email">
+                    <select name="rubrique">
+                        <option value="bonsplans">Bons plans</option>
+                        <option value="exclusif">Infos exclusives</option>
+                        <option value="réductions">Réductions</option>
+                        <option value="invitation">Invitation en avant-première</option>
+                    </select>
+                    <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                    <button class="button">S'abonner</button>
+                </form>
+            </div>
+            <div id="googlemap-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.974234442223!2d6.641536815483763!3d43.2709990791369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cddb5b324b1767%3A0x9553440a05353c1a!2sCitadelle%20de%20Saint-Tropez%20-%20Mus%C3%A9e%20d'histoire%20maritime!5e0!3m2!1sfr!2sfr!4v1678886288639!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="mvsep-trial">
+            <div class="container mx-auto p-6" style="background-color: var(--card); border-radius: 10px; text-align: center;">
+                <h2 style="color: var(--accent);">Essai d'extraction d'instrument</h2>
+                <p>Musiciens, compositeurs, essayez notre outil d'extraction d'instrument en local.</p>
+                <a href="mvsep.html" class="button">Lancer l'essai</a>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="sponsors bg-gray-900 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Nos Sponsors</h2>
+            <div class="scrolling-sponsors">
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+1" alt="Sponsor 1" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+2" alt="Sponsor 2" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+3" alt="Sponsor 3" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+4" alt="Sponsor 4" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+5" alt="Sponsor 5" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+6" alt="Sponsor 6" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+1" alt="Sponsor 1" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+2" alt="Sponsor 2" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+3" alt="Sponsor 3" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+4" alt="Sponsor 4" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+5" alt="Sponsor 5" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/FFFFFF/000000/png?text=Logo+6" alt="Sponsor 6" class="rounded-full border-4 border-gray-700 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 © Art'Info by Thierry RAMANITRA | <a href="#">Mentions légales</a></p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.header__nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

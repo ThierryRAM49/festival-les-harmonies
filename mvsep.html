@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Essai MVSep-Local</title>
+    <link rel="stylesheet" href="sons.css">
+</head>
+<body style="background-color: var(--bg); color: var(--text);">
+    <main class="container">
+        <section class="electron-app">
+            <div class="container mx-auto p-6" style="background-color: var(--card); border-radius: 10px;">
+                <h1 style="color: var(--accent); text-align: center; margin-bottom: 2rem;">MVSep-Local</h1>
+
+                <div class="flex flex-col space-y-6 items-center">
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <button id="select-file" class="button">Sélectionner un fichier audio</button>
+                        <p>Fichier sélectionné : <span id="file-name">Aucun fichier sélectionné</span></p>
+                    </div>
+                
+                    <div class="flex flex-col items-center space-y-2">
+                        <button id="select-output" class="button">Sélectionner le répertoire de sortie</button>
+                        <p>Répertoire de sortie : <span id="output-path">Aucun répertoire sélectionné</span></p>
+                    </div>
+                
+                    <div class="models flex space-x-4">
+                        <p>Modèle :</p>
+                        <button id="demucs" class="button">Demucs</button>
+                        <button id="mdx23" class="button">MDX23</button>
+                    </div>
+                
+                    <div class="flex space-x-4">
+                        <button id="separate" class="button">Séparer</button>
+                        <button id="reset" class="button">Réinitialiser</button>
+                    </div>
+                
+                    <div id="progress" style="display: none;" class="w-full max-w-md">
+                        <p>Progression : </p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                            <div id="bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%; background-color: var(--green);"></div>
+                        </div>
+                    </div>
+                
+                    <div id="download" style="display: none;">
+                        <a id="zip-link" href="#" download class="button">Télécharger le ZIP des stems</a>
+                    </div>
+                
+                    <div id="stems" style="display: none;" class="w-full max-w-lg text-center">
+                        <h2 style="color: var(--accent);">Écouter les stems</h2>
+                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 mt-4">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        Instrument
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Lecteur Audio
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="stems-table-body">
+                                <!-- Les stems seront ajoutés ici par renderer.js -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <script src="renderer.js"></script>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
